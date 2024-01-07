@@ -1,0 +1,993 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+html body {
+    background-color: rgb(249, 238, 253);
+}
+
+
+
+
+/* HEADER & LOGO */
+
+header {
+    height: auto;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(66, 15, 82) 0%, rgba(4, 0, 4, 1) 90%);
+    z-index: 999;
+    box-shadow: 0 0 15px black;
+}
+
+header .logo {
+    color: white;
+    font-size: 35px;
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: 3px 3px 6px black;
+    cursor: pointer;
+}
+
+header .logo span {
+    color: #5EFCE8;
+}
+
+
+
+/* NAVBAR */
+
+header .navbar {
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+header .navbar a {
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 0 8px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 0.5s ease;
+
+}
+
+header .navbar a:hover {
+    background-color: rgb(69, 2, 69);
+}
+
+
+
+
+/* HEADER ICONS */
+
+header .icons a,
+header .icons i {
+    padding: 12px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    background-color: rgb(98, 21, 98);
+    border-radius: 50%;
+    margin: 0px 10px;
+    transition: all 0.3s ease;
+    position: relative;
+
+}
+
+header .icons a:hover,
+header .icons i:hover {
+    background-color: rgb(69, 2, 69);
+}
+
+#bars {
+    display: none;
+}
+
+
+#cartnumber {
+    position: absolute;
+    font-size: 9px;
+    background-color: rgb(255, 15, 15);
+    color: azure;
+    padding: 4px;
+    border-radius: 50%;
+    top: 2px;
+    right: 4px;
+}
+
+
+
+/* SERVICE */
+
+
+#heading {
+    text-align: center;
+    color: rgb(92, 0, 92);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    text-decoration: underline;
+}
+
+.service-listing {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 30px;
+    padding: 30px 100px;
+    box-shadow: 0 0 30px black;
+}
+
+.ser-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 30px 10px 10px;
+    background-color: white;
+    box-shadow: 1px 1px 8px black;
+    margin: 60px auto;
+}
+
+.ser-content {
+    display: flex;
+}
+
+.ser-box img {
+    height: 150px;
+    width: 200px;
+    border: 1px solid azure;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.ser-text {
+    padding-left: 20px;
+}
+
+
+
+.ser-text h2 {
+    padding: 20px 0px;
+}
+
+#ser-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    transition: 0.5s;
+}
+
+
+#ser-icon i {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+#ser-icon a{
+    text-decoration: none;
+    color: black;
+}
+
+#cs-photo{
+    width: 180px;
+    height: 150px;
+}
+
+.porter-book{
+    min-height: 50vh;
+    margin: 70px 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 60%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+    display: none;
+}
+
+.porter-book h3{
+    font-size: 36px;
+    color: gray;
+    font-weight: 700;
+    margin: 30px 10px;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.porter-book input{
+    border: 0;
+    margin: 10px;
+    padding: 12px;
+    width: 95%;
+    outline: none;
+    background: #f8f3f3;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#porter-name, #porter-mobile{
+    width: 46%;
+}
+
+#porter-address{
+    width: 70%;
+}
+
+.porter-book label{
+    font-size: 16px;
+    color: grey;
+    margin-left: 8px;
+}
+
+.porter-book select{
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 8px;
+    background: #f8f3f3;
+    border: 0;
+}
+
+#notice p{
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+    padding: 2px;
+}
+
+#notice li{
+    list-style-type: none;
+}
+#notice li ul{
+    margin: 5px;
+    font-size: 13px;
+}
+
+.book{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 10px;
+}
+
+.book button{
+    width: 100px;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    background-color: rgb(92, 0, 92);
+    color: azure;
+    border-radius: 2px;
+}
+
+#closebill {
+    position: relative;
+    top: -90px;
+    left: 95%;
+    font-size: 25px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 80px 10% 40px 10%;
+}
+
+footer .links {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+footer .links .quick-links {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+footer .links .quick-links h3 {
+    color: rgb(175, 90, 255);
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer .links .quick-links a {
+    text-decoration: none;
+    color: azure;
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: all 0.2s;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer .links .quick-links a span {
+    color: grey;
+}
+
+footer .links .quick-links a:hover {
+    color: rgb(114, 151, 254);
+}
+
+
+footer .designer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid gray;
+}
+
+#design {
+    color: gray;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:1192px) {
+
+    header .logo {
+        padding: 0;
+        font-size: 33px;
+    }
+
+    header {
+        padding: 13px 23px;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(66, 15, 82) 0%, rgba(4, 0, 4, 1) 90%);
+        border-top: 2x solid rgb(69, 2, 69);
+        border-bottom: 2px solid rgb(69, 2, 69);
+        padding: 1rem;
+        box-shadow: 0 0 15px black;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        z-index: 10;
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 10px 20px;
+        padding: 10px 30px;
+        font-size: 19px;
+    }
+
+    header .icons i,
+    header .icons a {
+        font-size: 17px;
+        padding: 11px;
+    }
+
+    #bars {
+        display: inline;
+    }
+
+    #cartnumber {
+        font-size: 9px;
+    }
+
+
+    .service-listing {
+        width: 85%;
+        margin: 10px auto;
+        border-radius: 30px;
+        padding: 30px 80px;
+        box-shadow: 0 0 30px black;
+    }
+    
+    .ser-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 10px 30px 10px 10px;
+        background-color: white;
+        box-shadow: 1px 1px 8px black;
+        margin: 60px auto;
+    }
+
+    .ser-text h2 {
+        padding: 20px 0px;
+        font-size: 22px;
+    }
+
+    .ser-text {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    #ser-icon i {
+        font-size: 50px;
+        cursor: pointer;
+    }
+
+    #heading{
+        font-size: 40px;
+    }
+
+    .porter-book{
+        top: 60%;
+    }
+
+    #porter-name, #porter-mobile{
+        width: 45%;
+    }
+
+    #porter-address{
+        width: 60%;
+    }
+
+
+    footer .links .quick-links h3 {
+        font-size: 20px;
+    }
+
+    footer .links .quick-links a {
+        font-size: 16px;
+    }
+
+    footer .designer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+
+    #design {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:950px) {
+    .service-listing {
+        width: 85%;
+        margin: 10px auto;
+        border-radius: 30px;
+        padding: 30px 50px;
+        box-shadow: 0 0 30px black;
+    }
+    
+    .ser-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 10px 30px 10px 10px;
+        background-color: white;
+        box-shadow: 1px 1px 8px black;
+        margin: 60px auto;
+    }
+
+    .ser-box img {
+        height: 120px;
+        width: 140px;
+        border: 1px solid azure;
+        border-radius: 15px;
+        margin-right: 5px;
+    }
+
+    .ser-text {
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    #ser-icon i {
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    #cs-photo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .ser-text h2 {
+        padding: 20px 0px 10px;
+        font-size: 17px;
+    }
+
+    #heading{
+        font-size: 35px;
+    }
+
+    .porter-book h3{
+        font-size: 30px;
+        margin: 20px 10px;
+    }
+
+    #porter-name, #porter-mobile, #porter-address{
+        width: 96%;
+    }
+
+    .porter-book select{
+        margin-bottom: 5px;
+        width: 90px;
+    }
+
+    .porter-book label{
+        margin-left: 15x;
+        font-size: 15px;
+    }
+
+    .porter-book input{
+        font-size: 15px;
+    }
+
+    
+
+
+    #closebill {
+        position: relative;
+        top: -70px;
+        left: 95%;
+        font-size: 25px;
+    }
+
+
+
+}
+
+@media (max-width:780px) {
+    header .logo {
+        padding: 0;
+        font-size: 30px;
+    }
+
+    header {
+        padding: 10px 10px;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 8px 20px;
+        padding: 8px 15px;
+        font-size: 18px;
+    }
+
+    header .icons i,
+    header .icons a {
+        font-size: 17px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #cartnumber {
+        font-size: 8px;
+    }
+
+    #heading{
+        font-size: 30px;
+    }
+
+
+    .service-listing {
+        width: 85%;
+        margin: 10px auto;
+        border-radius: 30px;
+        padding: 30px 50px;
+        box-shadow: 0 0 30px black;
+    }
+    
+    .ser-box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 10px 20px 10px 10px;
+        background-color: white;
+        box-shadow: 1px 1px 8px black;
+        margin: 60px auto;
+    }
+
+    .ser-box img {
+        height: 110px;
+        width: 120px;
+        border: 1px solid azure;
+        border-radius: 15px;
+        margin-right: 5px;
+    }
+
+    .ser-text {
+        padding-left: 13px;
+        font-size: 14px;
+    }
+
+    #ser-icon i {
+        font-size: 40px;
+        cursor: pointer;
+    }
+
+    #ser-icon a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #cs-photo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .ser-text h2 {
+        padding: 10px 0px 7px;
+        font-size: 17px;
+    }
+
+    .porter-book{
+        width: 70%;
+    }
+
+    .porter-book select{
+        margin-bottom: 5px;
+    }
+
+    .porter-book label{
+        margin-left: 15x;
+        font-size: 15px;
+    }
+
+    .porter-book input{
+        font-size: 14px;
+    }
+
+    .porter-book select{
+        width: 90px;
+    }
+
+
+    #closebill {
+        position: relative;
+        top: -80px;
+        left: 95%;
+        font-size: 25px;
+    }
+
+
+
+
+
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        background-color: black;
+        padding: 60px 10% 30px 10%;
+    }
+
+    footer .links .quick-links {
+        margin: 10px 20px;
+    }
+
+    footer .links .quick-links h3 {
+        font-size: 20px;
+    }
+
+    footer .links .quick-links a {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+
+    footer .designer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+
+    #design {
+        font-size: 14px;
+    }
+
+
+}
+
+
+@media (max-width:670px) {
+    header .logo {
+        padding: 0;
+        font-size: 23px;
+    }
+
+    header {
+        padding: 10px 10px;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 8px 20px;
+        padding: 8px 15px;
+        font-size: 17px;
+    }
+
+    header .icons i,
+    header .icons a {
+        font-size: 16px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #cartnumber {
+        font-size: 8px;
+    }
+
+
+    .service-listing {
+        width: 96%;
+        margin: 10px auto;
+        border-radius: 30px;
+        padding: 30px 0px;
+        box-shadow: 0 0 30px black;
+    }
+
+    .ser-box{
+        width: 380px;flex-direction: column;
+
+    }
+
+
+    #ser-icon{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        margin: 10px 10px 5px 10px;
+    }
+
+    .porter-book{
+        width: 80%;
+        top: 60%;
+    }
+
+    #kg{
+        width: 50px;
+    }
+
+    .porter-book label{
+        margin-left: 20x;
+        font-size: 14px;
+    }
+
+
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        background-color: black;
+        padding: 60px 10% 30px 10%;
+    }
+
+    footer .links .quick-links {
+        margin: 10px 20px;
+    }
+
+    footer .links .quick-links h3 {
+        font-size: 20px;
+    }
+
+    footer .links .quick-links a {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+
+    footer .designer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+
+    #design {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width:450px) {
+    header .logo {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    header {
+        padding: 7px 10px;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 8px 15px;
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+
+    header .icons i,
+    header .icons a {
+        font-size: 14px;
+        margin: 5px;
+        padding: 9px;
+    }
+
+    #cartnumber {
+        font-size: 6px;
+    }
+
+
+    .service-listing {
+        width: 100%;
+        margin: 10px auto;
+        border-radius: 30px;
+        padding: 30px 10px;
+        box-shadow: 0 0 30px black;
+    }
+
+    .ser-box{
+        width: auto;
+        flex-direction: column;
+
+    }
+
+    .ser-box img {
+        height: 90px;
+        width: 110px;
+        border: 1px solid azure;
+        border-radius: 15px;
+        margin-right: 5px;
+    }
+
+    .ser-text {
+        padding-left: 13px;
+        font-size: 12px;
+    }
+
+    .ser-text h2 {
+        padding: 10px 0px 7px;
+        font-size: 15px;
+    }
+
+    #ser-icon{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        margin: 10px 10px 5px 10px;
+    }
+
+    #cs-photo{
+        height: 90px;
+        width: 100px;
+    }
+
+    .porter-book{
+        width: 90%;
+        top: 50%;
+    }
+
+    .porter-book h3{
+        font-size: 20px;
+        margin: 10px 5px;
+    }
+
+    #closebill {
+        position: relative;
+        top: -45px;
+        left: 95%;
+        font-size: 16px;
+    }
+
+    .porter-book input{
+        font-size: 12px;
+        margin: 8px;
+    }
+
+    .porter-book select{
+        margin-bottom: 5px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .porter-book label{
+        font-size: 13px;
+        margin: 0 0 0 15px;
+        display:inline-block;
+    }
+
+    #notice li ul{
+        font-size: 11px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        background-color: black;
+        padding: 60px 10% 30px 10%;
+    }
+
+    footer .links .quick-links {
+        margin: 10px 20px;
+    }
+
+    footer .links .quick-links h3 {
+        font-size: 18px;
+    }
+
+    footer .links .quick-links a {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+
+    footer .designer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+
+    #design {
+        color: gray;
+        text-align: center;
+        font-size: 13px;
+    }
+
+
+}

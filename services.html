@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services-Hyderabad's Kitchen</title>
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Nunito&family=Poppins:wght@700&family=Rowdies:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">HYDERABAD'S <span>KITCHEN</span></h2>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="bars"></i>
+            <a href="cart.html" class="fas fa-cart-shopping"><span id="cartnumber">0</span></a>
+        </div>
+    </header>
+
+    <div class="porter-book">
+        <h3>Package Delivery</h3>
+        <i class="fa-solid fa-xmark" id="closebill"></i>
+        <div class="porter-content">
+            <input type="text" placeholder="Enter your Name" id="porter-name">
+            <input type="text" placeholder="Enter your Phone number" id="porter-mobile" maxlength="10">
+            <input type="text" placeholder="Enter your Address" id="porter-address">
+            <label>City :</label>
+            <select>
+                <option>Hyderabad</option>
+            </select>
+            <input type="text" placeholder="Enter Destination Address" id="porter-dest">
+            <label>City :</label>
+            <select>
+                <option>Hyderabad</option>
+                <option>Banglore</option>
+                <option>Chennai</option>
+                <option>Delhi</option>
+                <option>Kochi</option>
+                <option>Mumbai</option>
+                <option>Vizag</option>
+            </select>
+            <label>Package weight :</label>
+            <select id="kg">
+                <option>2 Kg</option>
+                <option>5 Kg</option>
+                <option>7 Kg</option>
+                <option>10 Kg</option>
+            </select>
+        </div>
+
+        <div class="porter-footer">
+            <div id="notice">
+                <p><b>Important Notice</b></p>
+                <li>
+                    <ul>1. The prices may differ due to loaction and package weight</ul>
+                    <ul>2. General price of 5kg package for 20kms is Rs. 100</ul>
+                    <ul>3. For more information Call: <b>1234567890</b></ul>
+                </li>
+            </div>
+            <div class="book">
+                <button type="button" id="porter-btn">Book</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="service">
+        <div class="service-listing">
+            <h2 id="heading">SERVICES</h2>
+            <div class="ser-box" id="fd-box">
+                <div class="ser-content">
+                    <img src="./Photos/foodmitho.jpg" alt="food delivery">
+
+                    <div class="ser-text">
+                        <h2>ONLINE DELIVERY</h2>
+                        <ul>
+                            <li>Menu Exploration</li>
+                            <li>Different type of cuisines</li>
+                            <li>Secure Payment</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="ser-icon">
+                    <a href="project.html"><i class="fa-solid fa-arrow-right" id="fd-icon"></i></a>
+                </div>
+            </div>
+
+            <div class="ser-box" id="porter-box">
+                <div class="ser-content">
+                    <img src="./Photos/porter.jpg" alt="porter">
+                    <div class="ser-text">
+                        <h2>PACKAGE DELIVERY</h2>
+                        <ul>
+                            <li>Deliver your package to preferred location</li>
+                            <li>Any where in india from Hyderabad</li>
+                            <li>Weight Upto 10kgs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="ser-icon">
+                    <i class="fa-solid fa-arrow-right" id="porter-icon"></i></a>
+                </div>
+            </div>
+
+            <div class="ser-box" id="cs-box">
+                <div class="ser-content">
+                    <img id="cs-photo" src="./Photos/cs.png" alt="customer support">
+                    <div class="ser-text">
+                        <h2>CUSTOMER SUPPORT</h2>
+                        <ul>
+                            <li>Customer Helpline during working hours</li>
+                            <li>Queries will be replied with in 1 hour </li>
+                            <li>Quick Refund within 1 hour</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="ser-icon">
+                    <a href="contact.html"><i class="fa-solid fa-arrow-right" id="cs-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="links">
+            <div class="quick-links">
+                <h3>Follow Us </h3>
+                <a href="https://www.linkedin.com/in/sushvanth-dudgundi/">LinkedIn</a>
+                <a href="https://www.instagram.com/sushvanth.dudgundi/">Instagram</a>
+                <a href="https://twitter.com/sushvanth_d22">X <span>(formerly twitter)</span></a>
+                <a href="https://www.facebook.com/profile.php?id=100004745114653">Facebook</a>
+            </div>
+
+            <div class="quick-links">
+                <h3>QUick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Service</a>
+                <a href="contact.html">Contact</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+            <div class="quick-links">
+                <h3>Cuisines</h3>
+                <a href="southindian.html">South Indian</a>
+                <a href="northindian.html">North Indian</a>
+                <a href="asian.html">Asian</a>
+                <a href="fastfood.html">Fast Food</a>
+                <a href="desserts.html">Desserts</a>
+            </div>
+
+
+        </div>
+
+        <div class="designer">
+            <p id="design">Copyright © 2023. HYDERABAD'S KITCHEN - All Rights Reserved . Terms of use
+                Privacy<br>Designed by Sushvanth Dudgundi</p>
+        </div>
+    </footer>
+
+    
+
+</body>
+
+<script src="./project.js"></script>
+
+</html>

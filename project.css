@@ -1,0 +1,3390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+
+html body {
+    background-color: rgb(249, 238, 253);
+}
+
+
+
+
+/* HEADER & LOGO */
+
+header {
+    height: auto;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(66, 15, 82) 0%, rgba(4, 0, 4, 1) 90%);
+    z-index: 999;
+    box-shadow: 0 0 15px black;
+}
+
+header .logo {
+    color: white;
+    font-size: 35px;
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+    text-decoration: none;
+    text-shadow: 3px 3px 6px black;
+    cursor: pointer;
+}
+
+header .logo span {
+    color: #5EFCE8;
+}
+
+
+
+/* NAVBAR */
+
+header .navbar {
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+header .navbar a {
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 0 8px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 0.5s ease;
+
+}
+
+header .navbar a:hover {
+    background-color: rgb(69, 2, 69);
+}
+
+
+
+
+/* HEADER ICONS */
+
+header .icons a,
+header .icons i {
+    padding: 12px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    background-color: rgb(98, 21, 98);
+    border-radius: 50%;
+    margin: 0px 10px;
+    transition: all 0.3s ease;
+    position: relative;
+
+}
+
+header .icons a:hover,
+header .icons i:hover {
+    background-color: rgb(69, 2, 69);
+}
+
+#bars {
+    display: none;
+}
+
+
+#cartnumber {
+    position: absolute;
+    font-size: 9px;
+    background-color: rgb(255, 15, 15);
+    color: azure;
+    padding: 4px;
+    border-radius: 50%;
+    top: 2px;
+    right: 4px;
+}
+
+
+
+
+/* MAIN HERO */
+
+.hero {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px black;
+}
+
+.hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 0px 25px black;
+}
+
+.hero-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 5px auto;
+    text-align: center;
+}
+
+.hero-main h1 {
+    color: rgb(255, 149, 0);
+    font-size: 68px;
+    text-align: center;
+    font-family: 'Rowdies', sans-serif;
+    text-shadow: 8px 5px 1px black;
+    padding-bottom: 15px;
+}
+
+.hero-main h4 {
+    color: rgb(255, 3, 196);
+    padding-bottom: 60px;
+    font-size: 25px;
+    text-shadow: 5px 1px 1px black;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-main button {
+    color: azure;
+    height: 50px;
+    width: 160px;
+    background-color: black;
+    font-family: 'Rowdies', sans-serif;
+    border: 1px solid black;
+}
+
+.hero-main button:hover {
+    background-color: azure;
+    color: black;
+}
+
+
+
+
+/* MAIN SERVICES */
+
+.main-services {
+    width: 100%;
+    background-color: rgb(249, 238, 253);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 120px 20px;
+}
+
+.main-services .features {
+    height: 240px;
+    width: 190px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px gray;
+    margin: 10px;
+}
+
+.main-services .features img {
+    height: 100px;
+    width: 100px;
+    padding: 5px 5px;
+}
+
+.main-services .features h2 {
+    font-size: 17px;
+    padding: 8px 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 750;
+    text-align: center;
+}
+
+.main-services .features P {
+    font-size: 12px;
+    color: gray;
+    padding: 3px 15px 8px 15px;
+    text-align: center;
+}
+
+
+
+/* MAIN PAGE HEADINGS */
+
+.main-heading {
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+.main-heading h2 {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px auto;
+    text-shadow: 0 0 1px black;
+}
+
+
+/*  MAIN PAGE BEST DISHES */
+
+.best-dishes {
+    width: 80%;
+    margin: 100px auto;
+    padding: 10px 10px;
+    box-shadow: 0 0 30px gray;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.best-dishes .food-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    min-height: 290px;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+
+    border-radius: 10px;
+    padding: 30px 15px;
+    margin: 50px 10px;
+    position: relative;
+}
+
+
+
+
+
+
+
+.best-dishes .food-items img {
+    height: 180px;
+    width: 95%;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+}
+
+.best-dishes .food-items h2 {
+    text-align: center;
+    padding: 25px 5px 8px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.best-dishes .food-items p {
+    text-align: center;
+    padding: 4px;
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.best-dishes .food-items .food-footer {
+    width: 60%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.best-dishes .food-items .food-footer button {
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    background-color: rgb(93, 7, 115);
+    transition: transform 0.3s ease;
+}
+
+.best-dishes .food-items .food-footer button:hover {
+    background-color: rgb(140, 48, 163);
+    transform: scale(1.05);
+}
+
+.best-dishes .food-items .food-footer button span {
+    color: azure;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.best-dishes .food-items .food-footer #price,
+.best-dishes .food-items .food-footer p {
+    color: crimson;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./Photos/banner.png);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 25px rgb(174, 107, 201);
+    margin-bottom: 100px;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 2000;
+    color: deeppink;
+    font-family: 'Rowdies', sans-serif;
+    text-shadow: 5px 3px 2px black;
+    word-spacing: 35px;
+    background-image: url(./Photos/pngwing.com.png);
+    background-repeat: repeat;
+    background-size: 80px;
+}
+
+
+
+
+
+
+/* MAIN PAGE CUISINES */
+
+.main-cuisines {
+    width: 80%;
+    margin: 100px auto;
+    box-shadow: 0 0 30px gray;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main-cuisines .cuisines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 270px;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 10px;
+
+}
+
+.main-cuisines .cuisines img {
+    height: 100px;
+    width: 90%;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+}
+
+.main-cuisines .cuisines h2 {
+    text-align: center;
+    padding: 10px 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-cuisines .cuisines button {
+    color: white;
+    background-color: rgb(93, 7, 115);
+    width: 150px;
+    height: 40px;
+    border-color: rgb(93, 7, 115);
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px black;
+    padding: 10px 30px 30px 30px;
+}
+
+.main-cuisines .cuisines button:hover {
+    background-color: rgb(69, 2, 69);
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: black;
+    padding: 80px 10% 40px 10%;
+}
+
+footer .links {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+footer .links .quick-links {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+footer .links .quick-links h3 {
+    color: rgb(175, 90, 255);
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer .links .quick-links a {
+    text-decoration: none;
+    color: azure;
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: all 0.2s;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer .links .quick-links a span {
+    color: grey;
+}
+
+footer .links .quick-links a:hover {
+    color: rgb(114, 151, 254);
+}
+
+
+footer .designer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid gray;
+}
+
+#design {
+    color: gray;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+/*--------------------------------
+----------------------------------
+--------------------------------*/
+/* About.HTML */
+/*--------------------------------
+----------------------------------
+--------------------------------*/
+
+
+
+.about-main {
+    width: 80%;
+    margin: 10px auto;
+    background-color: rgb(249, 238, 253);
+    box-shadow: 0 0 40px gray;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.about-main h1 {
+    color: rgb(179, 19, 179);
+    font-size: 52px;
+    text-align: center;
+    font-family: 'Rowdies', sans-serif;
+    text-shadow: 5px 2px 1px black;
+}
+
+#about {
+    padding-top: 5px;
+    padding-bottom: 110px;
+}
+
+
+.about-main #about h2 {
+    font-size: 28px;
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(92, 0, 92);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.about-main #about p {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 19px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.about-main #about #last-para {
+    padding-top: 100px;
+    font-weight: 700;
+}
+
+
+
+
+/*--------------------------------
+----------------------------------
+--------------------------------*/
+/*           CART.HTML          */
+/*--------------------------------
+----------------------------------
+--------------------------------*/
+
+
+
+.cart-main {
+    min-height: 100vh;
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+}
+
+.cart-main h2 {
+    margin-top: 50px;
+    font-size: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(92, 0, 92);
+    border-bottom: 2px solid black;
+}
+
+.billing {
+    width: 60%;
+    min-height: 70%;
+    margin: 10px auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(229, 232, 232);
+    padding: 20px 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px black;
+    display: none;
+
+}
+
+#closebill {
+    position: relative;
+    top: 20px;
+    left: 97%;
+    font-size: 25px;
+}
+
+.billing h2 {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.billing label {
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.billing input {
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    background-color: rgb(229, 232, 232);
+}
+
+.billing h3 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    margin: 10px 0;
+}
+
+.error {
+    color: rgb(255, 1, 1);
+    font-size: 11px;
+    margin-left: 20px;
+}
+
+.card-info {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-info div {
+    width: 60%;
+}
+
+.card-info input {
+    margin: 5px 30px;
+    font-size: 15px;
+    padding: 10px;
+    width: 40%;
+}
+
+.card-info select {
+    width: 80px;
+    height: 40px;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.billing button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(92, 0, 92);
+    color: azure;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 2px;
+}
+
+/* Order confirm Slip */
+
+.order-done {
+    width: 40%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(229, 232, 232);
+    border-radius: 5px;
+    box-shadow: 0 0 50px black;
+    display: none;
+}
+
+.order-confirm {
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-bottom-style: dashed;
+}
+
+.order-confirm div {
+    background-color: rgb(92, 0, 92);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.order-confirm h1 {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    color: white;
+}
+
+.order-confirm h1 span {
+    color: #5EFCE8;
+}
+
+.order-confirm h3 {
+    font-size: 35px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.items-delivery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    padding: 15px;
+    row-gap: 10px;
+    border-bottom: 1px solid black;
+    border-bottom-style: dashed;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.total-ack {
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.total-ack h3 {
+    text-align: right;
+    margin-right: 45px;
+    border-bottom: 1px solid black;
+    border-bottom-style: dashed;
+}
+
+.total-ack h3 p {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.total-ack h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.final-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 20px auto;
+}
+
+.final-button button {
+    height: 40px;
+    width: 75px;
+    margin: 10px;
+    color: azure;
+    background-color: rgb(92, 0, 92);
+    border-radius: 5px;
+
+}
+
+.cart-container table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 50px auto;
+    padding: 50px 10px;
+}
+
+.cart-container table thead tr {
+    background-color: rgb(92, 0, 92);
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-table tr {
+    background-color: rgb(168, 70, 168);
+}
+
+.cart-table tr td {
+    color: azure;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 1px solid rgb(167, 166, 166);
+    text-align: center;
+    margin: auto;
+}
+
+.cart-table tr td:nth-child(1) {
+    width: 30%;
+}
+
+.cart-table tr td:nth-child(2) {
+    width: auto;
+}
+
+.cart-table tr td:nth-child(3) {
+    width: auto;
+}
+
+.cart-table tr td:nth-child(4) {
+    width: auto;
+}
+
+.cart-table tr td:nth-child(5) {
+    width: auto;
+}
+
+.cart-table tr td img {
+    width: 200px;
+    height: 100px;
+    margin: 4px 4px;
+}
+
+.cart-table tr td input {
+    width: 45px;
+    height: 30px;
+    margin: 0;
+
+}
+
+#quantity-box {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 70px;
+    margin: 5px auto;
+}
+
+
+#quant-minus,
+#quant-plus {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(92, 0, 92);
+    color: azure;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#quant-minus:hover,
+#quant-plus:hover {
+    transform: scale(1.2);
+}
+
+#quant-value {
+    height: 20px;
+    width: 30px;
+    text-align: center;
+    font-size: 15px;
+    background-color: azure;
+    color: black;
+    line-height: 20px;
+}
+
+.cart-details tr td i {
+    font-size: 22px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-details tr td i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+.cart-main .cart-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.cart-main .cart-footer .cart-checkout {
+    width: 55%;
+    border: 1px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+}
+
+#cartfooter-head {
+    background-color: rgb(92, 0, 92);
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+.subtotal-box,
+.shipping-box,
+.total-box {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.shipping-box #shipping span {
+    color: gray;
+}
+
+.cartcheckout-footer {
+    border-top: 1px solid black;
+}
+
+.checkout-button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.checkout-button button {
+    padding: 15px 40px;
+    margin: 25px auto;
+    color: azure;
+    background-color: rgb(11, 11, 11);
+    font-weight: 700;
+    font-size: 15px;
+    transition: transform 0.2s ease;
+}
+
+.checkout-button button:hover {
+    box-shadow: 0 0 5px black;
+}
+
+#emptycart-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#couponsuccess {
+    font-weight: 600;
+}
+
+
+
+/*--------------------------------
+----------------------------------
+--------------------------------*/
+/*        Contact.HTML          */
+/*--------------------------------
+----------------------------------
+--------------------------------*/
+
+.contact-form {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.contact-form div {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    min-width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+.contact-form div h3 {
+    font-size: 40px;
+    color: gray;
+    font-weight: 700;
+    margin: 20px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form div input,
+.contact-form div textarea {
+    border: 0;
+    margin: 10px;
+    padding: 15px;
+    outline: none;
+    background: #f8f3f3;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.contact-form div button {
+    padding: 10px;
+    border: 0;
+    background: rgb(92, 0, 92);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px;
+    height: 50px;
+    border-radius: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width:1192px) {
+
+    header .logo {
+        padding: 0;
+        font-size: 33px;
+    }
+
+    header {
+        padding: 13px 23px;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(66, 15, 82) 0%, rgba(4, 0, 4, 1) 90%);
+        border-top: 2x solid rgb(69, 2, 69);
+        border-bottom: 2px solid rgb(69, 2, 69);
+        padding: 1rem;
+        box-shadow: 0 0 15px black;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        z-index: 10;
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 10px 20px;
+        padding: 10px 30px;
+        font-size: 19px;
+    }
+
+    header .icons i,
+    header .icons a {
+        font-size: 17px;
+        padding: 11px;
+    }
+
+    #bars {
+        display: inline;
+    }
+
+    #cartnumber {
+        font-size: 9px;
+    }
+
+
+    .hero-main h1 {
+        font-size: 59px;
+        text-shadow: 8px 2px 4px black;
+    }
+
+
+    .hero-main h4 {
+        font-size: 24px;
+        text-shadow: 3px 1px 1px black;
+    }
+
+    .hero-main button {
+        height: 50px;
+        width: 130px;
+        font-size: 14px;
+    }
+
+    .main-services {
+        flex-wrap: wrap;
+    }
+
+    .main-services .features {
+        margin: 20px 13px;
+        height: 210px;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .main-services .features img {
+        height: 80px;
+        width: 80px;
+        padding: 5px 5px;
+    }
+
+    .main-services .features h2 {
+        font-size: 15px;
+        padding: 8px 8px;
+
+    }
+
+    .main-services .features P {
+        font-size: 10px;
+
+    }
+
+    .main-heading h2 {
+        font-size: 47px;
+
+    }
+
+
+    /*  MAIN PAGE BEST DISHES */
+
+    .best-dishes {
+        flex-wrap: wrap;
+    }
+
+    .best-dishes .food-items {
+        width: 340px;
+        min-height: 240px;
+        margin: 40px 10px;
+    }
+
+
+
+    .best-dishes .food-items img {
+        height: 140px;
+        width: 95%;
+    }
+
+
+    .best-dishes .food-items p {
+        font-size: 13px;
+    }
+
+    .best-dishes .food-items .food-footer {
+        width: 50%;
+        height: 80px;
+    }
+
+    .best-dishes .food-items .food-footer button {
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+    }
+
+
+    .best-dishes .food-items .food-footer #price,
+    .best-dishes .food-items .food-footer p {
+        color: crimson;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 5px;
+        font-weight: 700;
+    }
+
+
+    .banner h3 {
+        font-size: 27px;
+    }
+
+    .main-cuisines {
+        flex-wrap: wrap;
+    }
+
+    .main-cuisines .cuisines {
+        margin: 20px 10px;
+        width: 200px;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .main-cuisines .cuisines img {
+        height: 90px;
+        width: 100%;
+    }
+
+    .main-cuisines .cuisines h2 {
+        padding: 10px 3px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .main-cuisines .cuisines button {
+        width: 100px;
+        height: 35px;
+        padding: 10px;
+    }
+
+
+    footer .links .quick-links h3 {
+        font-size: 20px;
+    }
+
+    footer .links .quick-links a {
+        font-size: 16px;
+    }
+
+    footer .designer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+
+    #design {
+        font-size: 15px;
+    }
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /* About.HTML */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+
+
+    .about-main {
+        width: 85%;
+        margin: 10px auto;
+        padding: 30px;
+    }
+
+    .about-main h1 {
+        font-size: 40px;
+        text-shadow: 4px 2px 2px black;
+    }
+
+    #about {
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 80px;
+    }
+
+
+    .about-main #about h2 {
+        font-size: 23px;
+        padding-top: 60px;
+    }
+
+    .about-main #about p {
+        font-size: 14px;
+    }
+
+    .about-main #about #last-para {
+        padding-top: 80px;
+        font-weight: 700;
+    }
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /*        Contact.HTML          */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+    .contact-form {
+        min-height: 50vh;
+        margin: 80px 0;
+    }
+
+    .contact-form form {
+        height: 80%;
+        min-width: 65%;
+        padding: 20px;
+    }
+
+    .contact-form form h3 {
+        font-size: 38px;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        margin: 10px;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .contact-form form button {
+        padding: 12px;
+        border: 0;
+        font-size: 15px;
+        height: 40px;
+    }
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /*           CART.HTML          */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+    .cart-container table {
+        width: 100%;
+        margin: 80px auto;
+        padding: 30px 10px;
+    }
+
+    .cart-main h2 {
+        font-size: 55px;
+        margin: 30px auto;
+    }
+
+
+    .cart-table tr td {
+        color: azure;
+        width: 20%;
+        font-size: 19px;
+        padding: 5px 10px;
+    }
+
+    .cart-table tr td img {
+        width: 170px;
+        height: 90px;
+        margin: 2px;
+    }
+
+
+    .cart-table tr td:nth-child(1) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(2) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(3) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(4) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(5) {
+        width: auto;
+    }
+
+    #quantity-box {
+        width: 72px;
+    }
+
+    #quant-minus,
+    #quant-plus {
+        height: 19px;
+        width: 18px;
+        line-height: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    #quant-minus:hover,
+    #quant-plus:hover {
+        transform: scale(1.2);
+    }
+
+    #quant-value {
+        height: 19px;
+        width: 36px;
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .cart-details tr td i {
+        font-size: 18px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .cart-details tr td i:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+
+
+    .cart-main .cart-footer {
+        flex-wrap: wrap;
+        margin: 50px 0;
+    }
+
+    .cart-main .cart-footer .cart-checkout {
+        width: 58%;
+        border: 1px solid black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 10px;
+    }
+
+    #cartfooter-head {
+        background-color: rgb(92, 0, 92);
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .subtotal-box,
+    .shipping-box,
+    .total-box {
+        font-size: 16px;
+    }
+
+    .checkout-button button {
+        padding: 10px 20px;
+        margin: 25px auto;
+        font-size: 14px;
+    }
+
+
+    .billing {
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 13px 25px;
+
+    }
+
+    #closebill {
+        font-size: 21px;
+    }
+
+    .billing h2 {
+        margin: 11px 0;
+    }
+
+    .billing label {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .billing input {
+        padding: 10px;
+        margin: 8px 0;
+        font-size: 13px;
+    }
+
+    .billing h3 {
+        font-size: 21px;
+    }
+
+    .error {
+        font-size: 12px;
+        margin-left: 12px;
+    }
+
+    .card-info {
+        display: flex;
+        margin: 15px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-info div {
+        margin: 5px;
+    }
+
+    .card-info label {
+        font-size: 15px;
+    }
+
+    .card-info input {
+        margin: 5px 10px;
+        font-size: 15px;
+        padding: 5px;
+        width: 60%;
+    }
+
+    .card-info select {
+        width: 50px;
+        height: 30px;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .billing button {
+        margin: 10px 0;
+        padding: 8px;
+        width: 100%;
+        font-size: 17px;
+    }
+
+
+    /* Order confirm Slip */
+
+    .order-done {
+        width: 65%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    .order-confirm div {
+        padding: 18px;
+    }
+
+    .order-confirm h1 {
+        font-size: 32px;
+    }
+
+
+    .order-confirm h3 {
+        font-size: 25px;
+        padding: 5px;
+        margin: 8px;
+    }
+
+    .items-delivery {
+        padding: 15px;
+        row-gap: 10px;
+        column-gap: 8px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .items-delivery h3 {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .items-delivery p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .total-ack {
+        font-size: 15px;
+        padding: 10px;
+        margin: 8px;
+    }
+
+    .total-ack h3 {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    .total-ack h3 p {
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .total-ack h4 {
+        margin-top: 22px;
+        font-size: 17px;
+    }
+
+    .final-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 20px auto;
+    }
+
+    .final-button button {
+        height: 40px;
+        width: 95px;
+        margin: 10px;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+@media (max-width:780px) {
+    header .logo {
+        padding: 0;
+        font-size: 30px;
+    }
+
+    header {
+        padding: 10px 10px;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 8px 20px;
+        padding: 8px 15px;
+        font-size: 18px;
+    }
+
+    header .icons i,
+    header .icons a {
+        font-size: 17px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #cartnumber {
+        font-size: 8px;
+    }
+
+
+
+    /* MAIN HERO */
+
+    .hero-main h1 {
+        font-size: 55px;
+        text-shadow: 8px 2px 4px black;
+    }
+
+    .hero-main h4 {
+        font-size: 20px;
+        text-shadow: 3px 1px 1px black;
+    }
+
+    .hero-main button {
+        height: 50px;
+        width: 130px;
+        font-size: 12px;
+    }
+
+
+
+    /* MAIN SERVICES */
+
+    .main-services {
+        padding: 100px 20px;
+    }
+
+    .main-services .features {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .main-services .features img {
+        height: 80px;
+        width: 80px;
+        padding: 5px 5px;
+    }
+
+    .main-services .features h2 {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+
+    .main-services .features P {
+        font-size: 8px;
+        padding: 3px 12px 8px 12px;
+    }
+
+
+
+    /* MAIN PAGE HEADINGS */
+
+    .main-heading h2 {
+        font-size: 45px;
+    }
+
+
+    /*  MAIN PAGE BEST DISHES */
+
+    .best-dishes {
+        margin: 60px auto 100px auto;
+    }
+
+    .best-dishes .food-items {
+        width: 300px;
+        min-height: 350px;
+        padding: 20px 20px;
+        margin: 30px 10px;
+    }
+
+
+    .best-dishes .food-items img {
+        height: 130px;
+        width: 95%;
+    }
+
+    .best-dishes .food-items h2 {
+        padding: 18px 5px 4px 5px;
+    }
+
+    .best-dishes .food-items p {
+        padding: 4px;
+        font-size: 13px;
+    }
+
+    .best-dishes .food-items .food-footer {
+        width: 60%;
+        height: 80px;
+    }
+
+    .best-dishes .food-items .food-footer button {
+        width: 100%;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .best-dishes .food-items .food-footer p {
+        font-size: 17px;
+    }
+
+
+
+    /* BANNER */
+
+    .banner {
+        margin-bottom: 80px;
+    }
+
+    .banner h3 {
+        font-size: 23px;
+        text-shadow: 5px 3px 2px black;
+        word-spacing: 30px;
+        background-size: 120px;
+    }
+
+
+
+
+
+
+    /* MAIN PAGE CUISINES */
+
+    .main-cuisines {
+        margin: 70px auto;
+        padding: 20px;
+    }
+
+    .main-cuisines .cuisines {
+        width: 180px;
+        height: auto;
+        padding: 20px 15px;
+
+    }
+
+    .main-cuisines .cuisines img {
+        height: 80px;
+        width: 100%;
+    }
+
+    .main-cuisines .cuisines h2 {
+        padding: 10px 3px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .main-cuisines .cuisines button {
+        width: 100px;
+        height: 35px;
+        padding: 10px;
+    }
+
+
+
+
+
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        background-color: black;
+        padding: 60px 10% 30px 10%;
+    }
+
+    footer .links .quick-links {
+        margin: 10px 20px;
+    }
+
+    footer .links .quick-links h3 {
+        font-size: 20px;
+    }
+
+    footer .links .quick-links a {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+
+    footer .designer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+
+    #design {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /* About.HTML */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+
+
+    .about-main {
+        width: 85%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .about-main h1 {
+        font-size: 33px;
+        text-shadow: 4px 2px 2px black;
+    }
+
+    #about {
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 80px;
+    }
+
+
+    .about-main #about h2 {
+        font-size: 23px;
+        padding-top: 60px;
+    }
+
+    .about-main #about p {
+        font-size: 14px;
+    }
+
+    .about-main #about #last-para {
+        padding-top: 80px;
+        font-weight: 700;
+    }
+
+
+
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /*           CART.HTML          */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+    .cart-container table {
+        width: 100%;
+        margin: 80px auto;
+        padding: 30px 10px;
+    }
+
+    .cart-main h2 {
+        font-size: 50px;
+        margin: 30px auto;
+    }
+
+
+    .cart-table tr td {
+        color: azure;
+        width: 20%;
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .cart-table tr td img {
+        width: 150px;
+        height: 80px;
+        margin: 2px;
+    }
+
+
+    .cart-table tr td:nth-child(1) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(2) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(3) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(4) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(5) {
+        width: auto;
+    }
+
+    #quantity-box {
+        width: 60px;
+    }
+
+    #quant-minus,
+    #quant-plus {
+        height: 18px;
+        width: 15px;
+        line-height: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    #quant-minus:hover,
+    #quant-plus:hover {
+        transform: scale(1.2);
+    }
+
+    #quant-value {
+        height: 18px;
+        width: 30px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .cart-details tr td i {
+        font-size: 16px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .cart-details tr td i:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+
+
+    .cart-main .cart-footer {
+        flex-wrap: wrap;
+        margin: 50px 0;
+    }
+
+    .cart-main .cart-footer .cart-checkout {
+        width: 65%;
+        border: 1px solid black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 10px;
+    }
+
+    #cartfooter-head {
+        background-color: rgb(92, 0, 92);
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .subtotal-box,
+    .shipping-box,
+    .total-box {
+        font-size: 16px;
+    }
+
+    .checkout-button button {
+        padding: 10px 20px;
+        margin: 20px auto;
+        font-size: 14px;
+    }
+
+
+    .billing {
+        width: 85%;
+        height: auto;
+        margin: 10px auto;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 13px 25px;
+
+    }
+
+    #closebill {
+        font-size: 21px;
+    }
+
+    .billing h2 {
+        margin: 11px 0;
+    }
+
+    .billing label {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .billing input {
+        padding: 10px;
+        margin: 8px 0;
+        font-size: 13px;
+    }
+
+    .billing h3 {
+        font-size: 21px;
+    }
+
+    .error {
+        font-size: 10px;
+        margin-left: 12px;
+    }
+
+    .card-info {
+        display: flex;
+        margin: 15px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-info div {
+        margin: 5px;
+    }
+
+    .card-info label {
+        font-size: 14px;
+    }
+
+    .card-info input {
+        margin: 5px 10px;
+        font-size: 13px;
+        padding: 5px;
+        width: 60%;
+    }
+
+    .card-info select {
+        width: 50px;
+        height: 30px;
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    .billing button {
+        margin: 10px 0;
+        padding: 8px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Order confirm Slip */
+
+    .order-done {
+        width: 65%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    .order-confirm div {
+        padding: 18px;
+    }
+
+    .order-confirm h1 {
+        font-size: 27px;
+    }
+
+
+    .order-confirm h3 {
+        font-size: 22px;
+        padding: 5px;
+        margin: 8px;
+    }
+
+    .items-delivery {
+        padding: 15px;
+        row-gap: 10px;
+        column-gap: 8px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .items-delivery h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .items-delivery p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .total-ack {
+        font-size: 15px;
+        padding: 10px;
+        margin: 8px;
+    }
+
+    .total-ack h3 {
+        margin-right: 16px;
+    }
+
+    .total-ack h3 p {
+        font-weight: normal;
+        font-size: 13px;
+    }
+
+    .total-ack h4 {
+        margin-top: 22px;
+    }
+
+    .final-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 20px auto;
+    }
+
+    .final-button button {
+        height: 35px;
+        width: 85px;
+        margin: 10px;
+
+    }
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /*        Contact.HTML          */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+    .contact-form {
+        min-height: 50vh;
+        margin: 80px 0;
+    }
+
+    .contact-form form {
+        height: 80%;
+        min-width: 70%;
+        padding: 20px;
+    }
+
+    .contact-form form h3 {
+        font-size: 35px;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        margin: 10px;
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .contact-form form button {
+        padding: 10px;
+        border: 0;
+        font-size: 14px;
+        height: 40px;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width:620px) {
+    header .logo {
+        padding: 0;
+        font-size: 23px;
+    }
+
+    header {
+        padding: 10px 10px;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 8px 20px;
+        padding: 8px 15px;
+        font-size: 17px;
+    }
+
+    header .icons i,
+    header .icons a {
+        font-size: 16px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    #cartnumber {
+        font-size: 8px;
+    }
+
+
+
+    /* MAIN HERO */
+
+    .hero-main h1 {
+        font-size: 50px;
+        text-shadow: 8px 2px 4px black;
+    }
+
+    .hero-main h4 {
+        font-size: 20px;
+        text-shadow: 3px 1px 1px black;
+    }
+
+    .hero-main button {
+        height: 50px;
+        width: 130px;
+        font-size: 12px;
+    }
+
+
+
+    /* MAIN SERVICES */
+
+    .main-services {
+        padding: 100px 20px;
+    }
+
+    .main-services .features {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .main-services .features img {
+        height: 80px;
+        width: 80px;
+        padding: 5px 5px;
+    }
+
+    .main-services .features h2 {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+
+    .main-services .features P {
+        font-size: 8px;
+        padding: 3px 12px 8px 12px;
+    }
+
+
+
+    /* MAIN PAGE HEADINGS */
+
+    .main-heading h2 {
+        font-size: 45px;
+    }
+
+
+    /*  MAIN PAGE BEST DISHES */
+
+    .best-dishes {
+        margin: 60px auto 100px auto;
+    }
+
+    .best-dishes .food-items {
+        width: 300px;
+        min-height: 350px;
+        padding: 20px 20px;
+        margin: 30px 10px;
+    }
+
+
+    .best-dishes .food-items img {
+        height: 130px;
+        width: 95%;
+    }
+
+    .best-dishes .food-items h2 {
+        padding: 18px 5px 4px 5px;
+    }
+
+    .best-dishes .food-items p {
+        padding: 4px;
+        font-size: 13px;
+    }
+
+    .best-dishes .food-items .food-footer {
+        width: 60%;
+        height: 80px;
+    }
+
+    .best-dishes .food-items .food-footer button {
+        width: 100%;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .best-dishes .food-items .food-footer p {
+        font-size: 17px;
+    }
+
+
+
+    /* BANNER */
+
+    .banner {
+        margin-bottom: 80px;
+    }
+
+    .banner h3 {
+        font-size: 23px;
+        text-shadow: 5px 3px 2px black;
+        word-spacing: 30px;
+        background-size: 120px;
+    }
+
+
+
+
+
+
+    /* MAIN PAGE CUISINES */
+
+    .main-cuisines {
+        margin: 70px auto;
+        padding: 20px;
+    }
+
+    .main-cuisines .cuisines {
+        width: 180px;
+        height: auto;
+        padding: 20px 15px;
+
+    }
+
+    .main-cuisines .cuisines img {
+        height: 80px;
+        width: 100%;
+    }
+
+    .main-cuisines .cuisines h2 {
+        padding: 10px 3px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .main-cuisines .cuisines button {
+        width: 100px;
+        height: 35px;
+        padding: 10px;
+    }
+
+
+
+
+
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        background-color: black;
+        padding: 60px 10% 30px 10%;
+    }
+
+    footer .links .quick-links {
+        margin: 10px 20px;
+    }
+
+    footer .links .quick-links h3 {
+        font-size: 20px;
+    }
+
+    footer .links .quick-links a {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+
+    footer .designer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+
+    #design {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /* About.HTML */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+
+
+    .about-main {
+        width: 85%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .about-main h1 {
+        font-size: 33px;
+        text-shadow: 4px 2px 2px black;
+    }
+
+    #about {
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 80px;
+    }
+
+
+    .about-main #about h2 {
+        font-size: 23px;
+        padding-top: 60px;
+    }
+
+    .about-main #about p {
+        font-size: 14px;
+    }
+
+    .about-main #about #last-para {
+        padding-top: 80px;
+        font-weight: 700;
+    }
+
+
+
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /*           CART.HTML          */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+    .cart-container table {
+        width: 100%;
+        margin: 80px auto;
+        padding: 30px 10px;
+    }
+
+    .cart-main h2 {
+        font-size: 40px;
+        margin: 30px auto;
+    }
+
+
+    .cart-table tr td {
+        color: azure;
+        width: 20%;
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .cart-table tr td img {
+        width: 120px;
+        height: 70px;
+        margin: 4px 4px;
+    }
+
+
+    .cart-table tr td:nth-child(1) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(2) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(3) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(4) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(5) {
+        width: auto;
+    }
+
+    #quantity-box {
+        width: 45px;
+    }
+
+    #quant-minus,
+    #quant-plus {
+        height: 14px;
+        width: 14px;
+        line-height: 13px;
+        transition: transform 0.3s ease;
+    }
+
+    #quant-minus:hover,
+    #quant-plus:hover {
+        transform: scale(1.2);
+    }
+
+    #quant-value {
+        height: 14px;
+        width: 20px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .cart-details tr td i {
+        font-size: 14px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .cart-details tr td i:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+
+
+    .cart-main .cart-footer {
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .cart-main .cart-footer .cart-checkout {
+        width: 65%;
+        border: 1px solid black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 10px;
+    }
+
+    #cartfooter-head {
+        background-color: rgb(92, 0, 92);
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .subtotal-box,
+    .shipping-box,
+    .total-box {
+        font-size: 14px;
+    }
+
+    .checkout-button button {
+        padding: 10px 20px;
+        margin: 10px auto;
+        font-size: 12px;
+    }
+
+
+    .billing {
+        width: 85%;
+        height: auto;
+        margin: 10px auto;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 13px 25px;
+
+    }
+
+    #closebill {
+        font-size: 21px;
+    }
+
+    .billing h2 {
+        margin: 11px 0;
+    }
+
+    .billing label {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .billing input {
+        padding: 10px;
+        margin: 8px 0;
+        font-size: 13px;
+    }
+
+    .billing h3 {
+        font-size: 21px;
+    }
+
+    .error {
+        font-size: 10px;
+        margin-left: 12px;
+    }
+
+    .card-info {
+        display: flex;
+        margin: 15px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-info div {
+        margin: 5px;
+    }
+
+    .card-info label {
+        font-size: 14px;
+    }
+
+    .card-info input {
+        margin: 5px 10px;
+        font-size: 13px;
+        padding: 5px;
+        width: 60%;
+    }
+
+    .card-info select {
+        width: 50px;
+        height: 30px;
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    .billing button {
+        margin: 10px 0;
+        padding: 8px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Order confirm Slip */
+
+    .order-done {
+        width: 75%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    .order-confirm div {
+        padding: 17px;
+    }
+
+    .order-confirm h1 {
+        font-size: 25px;
+    }
+
+
+    .order-confirm h3 {
+        font-size: 20px;
+        padding: 5px;
+        margin: 8px;
+    }
+
+    .items-delivery {
+        padding: 15px;
+        row-gap: 10px;
+        column-gap: 8px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .items-delivery h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .items-delivery p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .total-ack {
+        font-size: 15px;
+        padding: 10px;
+        margin: 8px;
+    }
+
+    .total-ack h3 {
+        margin-right: 15px;
+    }
+
+    .total-ack h3 p {
+        font-weight: normal;
+        font-size: 13px;
+    }
+
+    .total-ack h4 {
+        margin-top: 20px;
+    }
+
+    .final-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 20px auto;
+    }
+
+    .final-button button {
+        height: 35px;
+        width: 75px;
+        margin: 10px;
+
+    }
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /*        Contact.HTML          */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+    .contact-form {
+        min-height: 50vh;
+        margin: 80px 0;
+    }
+
+    .contact-form form {
+        height: 80%;
+        min-width: 80%;
+        padding: 20px;
+    }
+
+    .contact-form form h3 {
+        font-size: 35px;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        margin: 10px;
+        padding: 15px;
+        font-size: 13px;
+    }
+
+    .contact-form form button {
+        padding: 10px;
+        border: 0;
+        font-size: 14px;
+        height: 40px;
+    }
+
+
+
+}
+
+
+
+@media (max-width:450px) {
+    header .logo {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    header {
+        padding: 7px 10px;
+    }
+
+    header .navbar a {
+        display: block;
+        margin: 8px 15px;
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+
+    header .icons i,
+    header .icons a {
+        font-size: 14px;
+        margin: 5px;
+        padding: 9px;
+    }
+
+    #cartnumber {
+        font-size: 6px;
+    }
+
+
+
+    /* MAIN HERO */
+
+    .hero img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        box-shadow: 0px 0px 25px black;
+    }
+
+    .hero-main h1 {
+        font-size: 40px;
+        text-shadow: 8px 2px 4px black;
+    }
+
+    .hero-main h4 {
+        font-size: 18px;
+        text-shadow: 3px 1px 1px black;
+    }
+
+    .hero-main button {
+        height: 50px;
+        width: 130px;
+        font-size: 12px;
+    }
+
+
+
+    /* MAIN SERVICES */
+
+    .main-services {
+        padding: 100px 20px;
+    }
+
+    .main-services .features {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .main-services .features img {
+        height: 80px;
+        width: 80px;
+        padding: 5px 5px;
+    }
+
+    .main-services .features h2 {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+
+    .main-services .features P {
+        font-size: 8px;
+        padding: 3px 12px 8px 12px;
+    }
+
+
+
+    /* MAIN PAGE HEADINGS */
+
+    .main-heading h2 {
+        font-size: 35px;
+    }
+
+
+    /*  MAIN PAGE BEST DISHES */
+
+    .best-dishes {
+        margin: 60px auto 100px auto;
+    }
+
+    .best-dishes .food-items {
+        width: 380px;
+        min-height: 250px;
+        padding: 20px 10px;
+        margin: 20px 10px;
+    }
+
+
+    .best-dishes .food-items img {
+        height: 130px;
+        width: 95%;
+    }
+
+    .best-dishes .food-items h2 {
+        padding: 15px 5px 4px 5px;
+    }
+
+    .best-dishes .food-items p {
+        padding: 4px;
+        font-size: 11px;
+    }
+
+    .best-dishes .food-items .food-footer {
+        width: 60%;
+        height: 80px;
+    }
+
+    .best-dishes .food-items .food-footer button {
+        width: 100%;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .best-dishes .food-items .food-footer button:hover {
+        background-color: rgb(140, 48, 163);
+        transform: scale(1.1);
+    }
+
+    .best-dishes .food-items .food-footer p {
+        font-size: 16px;
+    }
+
+
+
+    /* BANNER */
+
+    .banner {
+        margin-bottom: 70px;
+    }
+
+    .banner h3 {
+        font-size: 20px;
+        text-shadow: 5px 3px 2px black;
+        word-spacing: 30px;
+        background-size: 90px;
+    }
+
+
+
+
+
+
+    /* MAIN PAGE CUISINES */
+
+    .main-cuisines {
+        margin: 70px auto;
+        padding: 20px;
+    }
+
+    .main-cuisines .cuisines {
+        width: 180px;
+        height: auto;
+        padding: 20px 15px;
+
+    }
+
+    .main-cuisines .cuisines img {
+        height: 90px;
+        width: 100%;
+    }
+
+    .main-cuisines .cuisines h2 {
+        padding: 10px 3px;
+    }
+
+    .main-cuisines .cuisines button {
+        width: 100px;
+        height: 35px;
+        padding: 10px;
+    }
+
+
+
+
+
+
+
+    /* FOOTER */
+
+    footer {
+        width: 100%;
+        background-color: black;
+        padding: 60px 10% 30px 10%;
+    }
+
+    footer .links .quick-links {
+        margin: 10px 20px;
+    }
+
+    footer .links .quick-links h3 {
+        font-size: 18px;
+    }
+
+    footer .links .quick-links a {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+
+    footer .designer {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 2px solid gray;
+    }
+
+    #design {
+        color: gray;
+        text-align: center;
+        font-size: 13px;
+    }
+
+
+
+
+
+
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /* About.HTML */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+
+
+    .about-main {
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .about-main h1 {
+        font-size: 33px;
+        text-shadow: 4px 2px 2px black;
+    }
+
+    #about {
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 70px;
+    }
+
+
+    .about-main #about h2 {
+        font-size: 20px;
+        padding-top: 60px;
+    }
+
+    .about-main #about p {
+        font-size: 13px;
+    }
+
+    .about-main #about #last-para {
+        padding-top: 80px;
+        font-weight: 700;
+    }
+
+
+
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /*           CART.HTML          */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+    .cart-container table {
+        width: 100%;
+        margin: 50px auto;
+        padding: 50px 10px;
+    }
+
+    .cart-main h2 {
+        font-size: 30px;
+        margin: 30px auto;
+    }
+
+
+    .cart-table tr td {
+        color: azure;
+        width: 20%;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .cart-table tr td img {
+        width: 120px;
+        height: 70px;
+        margin: 4px 4px;
+    }
+
+
+    .cart-table tr td:nth-child(1) {
+        width: auto;
+        display: none;
+    }
+
+    .cart-table tr td:nth-child(2) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(3) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(4) {
+        width: auto;
+    }
+
+    .cart-table tr td:nth-child(5) {
+        width: auto;
+    }
+
+    #quantity-box {
+        width: 45px;
+    }
+
+    #quant-minus,
+    #quant-plus {
+        height: 14px;
+        width: 14px;
+        line-height: 13px;
+        transition: transform 0.3s ease;
+    }
+
+    #quant-minus:hover,
+    #quant-plus:hover {
+        transform: scale(1.2);
+    }
+
+    #quant-value {
+        height: 14px;
+        width: 20px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .cart-details tr td i {
+        font-size: 14px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .cart-details tr td i:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+
+
+    .cart-main .cart-footer {
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .cart-main .cart-footer .cart-checkout {
+        width: 65%;
+        border: 1px solid black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 10px;
+    }
+
+    #cartfooter-head {
+        background-color: rgb(92, 0, 92);
+        color: white;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .subtotal-box,
+    .shipping-box,
+    .total-box {
+        font-size: 11px;
+    }
+
+    .checkout-button button {
+        padding: 10px 20px;
+        margin: 10px auto;
+        font-size: 8px;
+    }
+
+
+    .billing {
+        width: 85%;
+        margin: 8px auto;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 25px;
+
+    }
+
+    #closebill {
+        font-size: 19px;
+    }
+
+    .billing h2 {
+        margin: 10px 0;
+    }
+
+    .billing label {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .billing input {
+        padding: 5px;
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    .billing h3 {
+        font-size: 18px;
+    }
+
+    .error {
+        font-size: 8px;
+        margin-left: 10px;
+    }
+
+    .card-info {
+        display: flex;
+        margin: 15px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-info div {
+        margin: 5px;
+    }
+
+    .card-info label {
+        font-size: 10px;
+    }
+
+    .card-info input {
+        margin: 5px 10px;
+        font-size: 10px;
+        padding: 5px;
+        width: 60%;
+    }
+
+    .card-info select {
+        width: 40px;
+        height: 20px;
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    .billing button {
+        margin: 10px 0;
+        padding: 8px;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    /* Order confirm Slip */
+
+    .order-done {
+        width: 85%;
+        position: absolute;
+        top: 40%;
+    }
+
+
+    .order-confirm div {
+        padding: 10px;
+    }
+
+    .order-confirm h1 {
+        font-size: 20px;
+    }
+
+
+    .order-confirm h3 {
+        font-size: 17px;
+        padding: 5px;
+        margin: 8px;
+    }
+
+    .items-delivery {
+        padding: 15px;
+        row-gap: 10px;
+        column-gap: 8px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .items-delivery h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .items-delivery p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .total-ack {
+        font-size: 15px;
+        padding: 10px;
+        margin: 8px;
+    }
+
+    .total-ack h3 {
+        margin-right: 15px;
+    }
+
+    .total-ack h3 p {
+        font-weight: normal;
+        font-size: 10px;
+    }
+
+    .total-ack h4 {
+        margin-top: 18px;
+    }
+
+    .final-button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto 20px auto;
+    }
+
+    .final-button button {
+        height: 35px;
+        width: 65px;
+        margin: 10px;
+
+    }
+
+
+
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+    /*        Contact.HTML          */
+    /*--------------------------------
+----------------------------------
+--------------------------------*/
+
+    .contact-form {
+        min-height: 50vh;
+        margin: 80px 0;
+    }
+
+    .contact-form form {
+        height: 80%;
+        min-width: 80%;
+        padding: 15px;
+    }
+
+    .contact-form form h3 {
+        font-size: 30px;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        margin: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .contact-form form button {
+        padding: 10px;
+        border: 0;
+        font-size: 13px;
+        height: 40px;
+    }
+
+
+
+}
