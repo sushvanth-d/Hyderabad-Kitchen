@@ -315,10 +315,6 @@ header .icons i:hover {
     transition: transform 0.3s ease;
 }
 
-.best-dishes .food-items .food-footer button:hover {
-    background-color: rgb(140, 48, 163);
-    transform: scale(1.05);
-}
 
 .best-dishes .food-items .food-footer button span {
     color: azure;
