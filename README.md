@@ -48,7 +48,37 @@ This project was built to enhance front-end development skills and simulate a re
 
 ## 📸 Screenshots
 
-(Add screenshots of your homepage, order form, cart, and confirmation screen here)
+&nbsp;
+### Home Page
+
+&nbsp;
+![Screenshot (300)](https://github.com/user-attachments/assets/712792f4-f3ff-4471-a42a-d5f6395356a9)
+
+&nbsp;
+### Explore Menue Under Home Page
+
+&nbsp;
+![Screenshot (301)](https://github.com/user-attachments/assets/2e7da317-38b8-479a-9538-6e8a7ef7079d)
+
+&nbsp;
+### Explore Cuisine Menu
+
+&nbsp;
+![Screenshot (302)](https://github.com/user-attachments/assets/ef576500-b267-4e1e-935d-69057c12b54c)
+
+&nbsp;
+### Cart
+
+&nbsp;
+![Screenshot (303)](https://github.com/user-attachments/assets/db994a16-c2ce-4ef9-af11-c4b5c0c4241a)
+
+&nbsp;
+### Order Conformation
+
+&nbsp;
+![Screenshot (304)](https://github.com/user-attachments/assets/45733f5f-eab8-41b4-b7eb-73a63cb85d9e)
+
+
 
 &nbsp;
 
